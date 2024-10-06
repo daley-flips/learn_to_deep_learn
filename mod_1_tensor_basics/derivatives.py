@@ -70,5 +70,5 @@ def partial_derivatives():
 
 
 # basic_derivative()
-# another_derivative()
-partial_derivatives()
+another_derivative()
+# partial_derivatives()
