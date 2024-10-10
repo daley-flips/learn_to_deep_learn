@@ -49,18 +49,15 @@ for epoch in range(epochs):
     
     COST.append(loss.item())
 
-# plt.plot(COST, marker='o')
-# plt.title("Cost vs Epochs")
-# plt.xlabel("Epochs")
-# plt.ylabel("Cost (Loss)")
-# plt.grid(True)
-
-# Plot actual data points
-# plt.figure(figsize=(10, 6))
-# plt.scatter(X.detach().numpy(), Y.detach().numpy(), label="Actual Data", color="blue")
-
-# # Plot predicted values
-# plt.plot(X.detach().numpy(), Yhat.detach().numpy(), label="Predicted Data", color="red")
+    
+    # plt.grid(True)
+    
+    # Plot actual data points
+    # plt.figure(figsize=(10, 6))
+    # plt.scatter(X.detach().numpy(), Y.detach().numpy(), label="Actual Data", color="blue")
+    
+    # # Plot predicted values
+    # plt.plot(X.detach().numpy(), Yhat.detach().numpy(), label="Predicted Data", color="red")
 
 # # Add labels and title
 # plt.title("Actual vs Predicted Values")
@@ -69,3 +66,8 @@ for epoch in range(epochs):
 # plt.legend()
 # plt.grid(True)
 # plt.show()
+
+plt.plot(COST, marker='o')
+plt.title("Cost vs Epochs")
+plt.xlabel("Epochs")
+plt.ylabel("Cost (Loss)")
